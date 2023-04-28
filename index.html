@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="section-1 container">
+        <h1 class="title1">Tabela IMC</h1>
+        <div class="section-content">
+            <section class="imc">
+                <h3>IMC</h3>
+                <p>Menor que 18,5</p>
+                <p>Entre 18,5 e 24,9</p>
+                <p>Entre 25 e 29,9</p>
+                <p>Entre 30 e 34,9</p>
+                <p>Entre 35 e 39,9</p>
+                <p>Maior que 40</p>
+            </section>
+            <section class="table-result">
+                <h3>Resultado</h3>
+                <p id="abaixo-do-peso">Abaixo do peso</p>
+                <p id="peso-normal">Peso Normal</p>
+                <p id="sobrepeso">Sobrepeso</p>
+                <p id="obesidade-grau-1">Obesidade grau 1</p>
+                <p id="obesidade-grau-2">Obesidade grau 2</p>
+                <p id="obesidade-grau-3">Obesidade grau 3</p>
+            </section>
+        </div>
+        <div clas="form-container">
+            <h1 class="title2">Calcule seu IMC</h1>
+            <form action="" class="form-imc">
+                <label for="">Peso:</label>
+                <p class="obs">Obs: Use . para casas decimais</p>
+                <input type="text" class="peso">
+                <label for="">Altura:</label>
+                <p class="obs">Obs: Use . para casas decimais</p>
+                <input type="text" class="altura">
+                <button>Calcular</button>
+            </form>
+        </div>
+        <div class="result-imc" id="r-imc">
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
